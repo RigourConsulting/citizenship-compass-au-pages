@@ -291,3 +291,69 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Approved brand asset integration */
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--harbour);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand-emblem-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-wordmark-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: none;
+}
+
+@media (min-width: 641px) {
+  .brand-wordmark-img {
+    display: block;
+    background: #FAF8F4;
+    padding: 3px 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  .brand-emblem-img {
+    display: none;
+  }
+  .brand-text {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-wordmark-img {
+    display: none;
+  }
+  .brand-emblem-img {
+    display: block;
+  }
+  .brand-text {
+    display: inline;
+  }
+}
+
+.hero-brand {
+  margin: 1.5rem 0 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-brand-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 12px;
+}
