@@ -357,3 +357,123 @@ footer {
   object-fit: contain;
   border-radius: 12px;
 }
+
+/* Data architecture and comparison tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--soft-surface);
+  color: var(--harbour);
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  th {
+    color: var(--ink);
+  }
+}
+
+tr:hover {
+  background-color: rgba(47, 111, 104, 0.04);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+}
+
+/* Architecture and flow diagrams */
+.diagram-box {
+  background-color: var(--soft-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.diagram-item {
+  background: var(--canvas);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.diagram-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--harbour);
+  font-size: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .diagram-item h4 {
+    color: var(--ink);
+  }
+}
+
+.diagram-item p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Platform tags */
+.platform-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.platform-tag.android {
+  background-color: rgba(47, 111, 104, 0.15);
+  color: var(--eucalyptus);
+}
+
+.platform-tag.future-ios {
+  background-color: rgba(217, 164, 65, 0.2);
+  color: #8C6214;
+}
+
+@media (prefers-color-scheme: dark) {
+  .platform-tag.future-ios {
+    color: var(--wattle);
+  }
+}
+
+/* Callout and highlight cards */
+.hero-tagline {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--eucalyptus);
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-tagline {
+    color: #4DB3A6;
+  }
+}
